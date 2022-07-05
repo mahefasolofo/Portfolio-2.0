@@ -6,6 +6,18 @@
     list-style: none;
   }
 
+/* navbar */
+#logo{
+    height: 80px;
+    width: auto;
+    margin-top: -20px;
+    background-color: #FF6400;
+}
+
+#logo:hover{
+    background-color: #41668B;
+}
+
 #navbar{
     position: fixed;
     top: 0;
@@ -13,10 +25,31 @@
     height: 60px;
     background-color: #23354A;
     padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 5px 12px grey;
+    z-index: 10;
+    opacity: 0.92;
+    font-size: 1.4rem;
+
+}
+#navbar-right{
+    padding: 10px 20px 0 10px;
+   
+}
+
+.navbar-elm{
+    padding: 10px 20px 0px 10px;
+    color: #D0F5FE;
+    text-decoration: none;
+
+}
+.navbar-elm:hover{
+    color: #FF6400;
 }
 
 .bi-accueil{
-    padding: 120px 0 0 100px;
+    padding: 0px 0 0 60px;
     font-size: 30px;
     color: #D0F5FE;
 }
@@ -25,46 +58,145 @@
     color: #FF6400;
     
 }
+.mailto{
+    color:#D0F5FE;
+}
 
-.btn-linkedin{
-   
-    background-color: #0a66c2;
+.mailto:hover{
+    color: #FF6400;
+
+}
+
+
+
+/*bouttons flottantes*/
+.btn-flottante{
+    background-color: #41668B;
     height: 50px;
     width: 50px;
     border-radius: 100%;
     position: fixed;
-    margin: 10px 10px 10px 93vw;
+    
     padding: 4px 0 0 10px;
+    z-index: 2;
 }
-.bi-linkedin{
+.btn-flottante:hover{
+    background-color: #FF6400;
+    border: none;
+}
+.btn-linkedin{
+    margin: 100px 10px 10px 93vw;
+    
+}
+.bi-flottante{
     color: #FFFFFF;
     font-size: 30px;
     
 }
-.btn-linkedin:hover{
-    background-color: #FF6400;
-    border: none;
+.btn-github{
+    margin: 170px 10px 10px 93vw;
 }
 
-
-.profil{
-    padding-top: 10px;
-    border-radius: 2rem;
+.btn-mail{
+    margin: 240px 10px 10px 93vw;
 }
 
-.row{
-    margin-top: 25px;
-}
-
-
-
-
+/*corps*/
 .corps{
-    padding-top: 80px;
+    padding: 0;
+}
+/*Welcome section*/
+#welcome{
+    background-image: url(../img/photo1.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    /* background-attachment:fixed; */
+    padding: 0;
+    margin: 0;
+    color: #23354A;
 }
 
-.home{
-    color: #FF6400;
-    margin: 0, 0, 0, 0;
+#welcome h1{
+    font-size: 2.7rem;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+
+  #welcome p{
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    position: absolute;
+    top: -800%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+  .carousel-inner{
+    color:#23354A;
+    width: 100vw;
+    height: 100vh;
+   
 }
+
+
+.p-slide{
+    margin: 805px 0 0 50px;
+    width: 500px;
+    height: auto;
+    text-align: left;
+    
+}
+.link-elm{
+    color: #172330;
+    text-decoration: none;
+}
+
+.link-elm:hover{
+    color: #FF6400;
+}
+
+.new_html_code {
+    width:150px;
+    height:100px;
+    min-width:150px;
+    min-height:100px;
+    max-width:200px;
+    max-height:100px;
+    overflow:hidden;
+    display:block;
+    
+  }
+
+  /*About me section*/
+  #aboutme{
+    height: 100vh;
+    width: 100vw;
+    background-color: #a2adbf;
+    padding: 80px 0 0 0;
+  }
+
+  #aboutme h1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 50px 0;
+  }
+  
+
+
+#parcours{
+    align-items: center;
+    color: #23354A;
+    
+    
+}
+
+
+
 

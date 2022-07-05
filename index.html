@@ -11,42 +11,132 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="navbar" class="container-fluid header">
-        <a href="#home"><i class="bi bi-house-door-fill bi-accueil"></i></a> <!--Mbola tsy mety tsara ilay makany @ home-->
-     
-    </div>
+  <!--navbar-->
+  
+    <nav id="navbar" class="container-fluid header">
+        <a href="#welcome"><img src="img/logo.png" alt="logo" id="logo"class="navbar-elm"></a>
+        <div id="navbar-right" class=" navbar-expand-md ">
+          <a class="navbar-elm" href="#welcome">Accueil</a>
+          <a class="navbar-elm" href="#aboutme">Mon parcours</a>
+          <a class="navbar-elm" href="#projects">Mes projets</a>
+          <a class="navbar-elm mailto" href="mailto:mahefa.rasolofonirina@gmail.com">Contactez-moi</a>
+          
+        </div>
+    </nav>
+
+  <!-- corps -->
     <div class="container-fluid corps">
-        <section id="home">
-          <a href="https://www.linkedin.com/in/mahefa-rasolofonirina/" class="btn-linkedin"><i class="bi bi-linkedin"></i></a>
-          <div class="container" >
-              <div class="row">
-                <article class="col-md-8">
-                  <h1 id="first">Parcours</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit odio molestias pariatur sunt quia optio laborum voluptate vel itaque. Id veritatis enim quod cupiditate.</p>
-                </article>  
-                <img src="img/profil.jpg" alt="profil" height="250" class="col-md-4 profil">
+      <!--Flottante-->
+      <a href="https://www.linkedin.com/in/mahefa-rasolofonirina/" class="btn-flottante btn-linkedin"><i class="bi bi-flottante bi-linkedin"></i></a>
+      <a href="https://github.com/mahefasolofo" class="btn-flottante btn-github"><i class="bi bi-flottante bi-github"></i></a>
+      <a href="mailto:mahefa.rasolofonirina@gmail.com" class="btn-flottante btn-mail" ><i class="bi bi-flottante bi-envelope-fill"></i></a>
+      <!-- Welcome section   -->
+      <section id="welcome" class="container-fluid ">
+        <h1>Bonjour,<br/> Je m'appelle Mahefa</h1>
+        
+        
+        <!--Carousel-->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="new_html_code"></div>
+              <div class="carousel-caption">
+                  <p class="p-slide">Concepteur développeur d'application numérique Fullstack</p>
               </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <img src="img/image2.jpg" alt="profil" height="250" class="col-md-4 profil">
-                <article class="col-md-8">
-                  <h1>Articles</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit odio molestias pariatur sunt quia optio laborum voluptate vel itaque. Id veritatis enim quod cupiditate.</p>
-                </article>  
-                
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <div class="new_html_code"></div>
+              <div class="carousel-caption">
+                  
+                  <p class="p-slide">Ingénieur chimiste de formation, de l’Ecole Supérieure Polytechnique d’Antananarivo</p>
               </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                <article class="col-md-8">
-                  <h1>Compétences</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit odio molestias pariatur sunt quia optio laborum voluptate vel itaque. Id veritatis enim quod cupiditate.</p>
-                </article>  
-                <img src="img/image3.jpg" alt="profil" height="250" class="col-md-4 profil">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <div class="new_html_code"></div>
+              <div class="carousel-caption">
+                  
+                  <p class="p-slide">Après ma formation universitaire, j’ai travaillé entant qu’ingénieur en traitement des eaux pendant 5 ans</p>
               </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <div class="new_html_code"></div>
+              <div class="carousel-caption">
+                  
+                  <p class="p-slide">En reconversion professionnelle,  chez <a href="https://www.inclusiv.mg/" class="link-elm">Inclusiv Academy </a>pour devenir Concepteur Développeur d’Application Numérique</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <div class="new_html_code"></div>
+              <div class="carousel-caption">
+                  
+                  <p class="p-slide">“Poursuit tes rêves ou ce sont tes rêves qui te poursuivront” …</p>
+              </div>
+            </div>
+             
           </div>
-        </section>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      
+      <!--A propos de moi section-->
+      <section id="aboutme" class="container-fluid">
+        <div class="row">
+          <h1 id="parcours"><span id="cadre-parcours"> Mon parcours</span></h1>
+          <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h2>Diplômes et formations</h2>
+            
+            <h4>Mars 2022 - 6 mois</h4>
+            <h3>Concepteur Développeur d’Applications Numériques Inclusiv Academy</h3>
+            
+            <h4>Mai 2018</h4>
+            <h3>Formation en Lean Management</h3>
+            <p>Méthode de résolution de problème et Gembawalk </br>Star Madagascar</p>
+            
+            <h4>Février 2017</h4>
+            <h3>Ingénieur en Procédés Chimiques et Industriels</h3>
+            <p>Ecole Supérieure Polytechnique d’Antananarivo, Vontovorona</p>
+
+            <h4>2010 - 6 ans</h4>
+            <h3>Génie des Procédés Chimiques et Industriels</h3>
+            <p>Ecole Supérieure Polytechnique d’Antananarivo, Vontovorona</p>
+
+          </div>
+          <div class="col col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h2>Expériences professionnelles</h2>
+            
+            <h4>Août 2018 – Mars 2022</h4>
+            <h3>Responsable stations d’épurations (STEP)</h3>
+            <p>Siège STAR Madagascar groupe CASTEL</p>
+            
+            <h4>Novembre 2016 – Août 2018</h4>
+            <h3>Ingénieur de laboratoire</h3>
+            <p>Usine STAR Madagascar Andraharo</p>
+            
+            <h4>Mai 2016 – Novembre 2016</h4>
+            <h3>Stage d’ingénieur de laboratoire</h3>
+            <p>Usines STAR Madagascar</p>
+
+            
+          </div>
+          
+          
+        </div>
+        
+
+      </section>
+
+      <!--Projets section-->
+      <section id="projects">
+
+      </section>
     </div>
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
