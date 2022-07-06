@@ -11,8 +11,19 @@
     <title>Document</title>
 </head>
 <body>
-  <!--navbar-->
-  
+  <!-- navbar
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  ======= Header ======= -->
+  <!-- <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        
+        
+      </ul>
+    </nav> -->
+
+  </header>
     <nav id="navbar" class="navbar navbar-expand-md container-fluid header">
         <a href="#welcome"><img src="img/logo.png" alt="logo" id="logo"class="navbar-brand navbar-elm"></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-right">
@@ -21,21 +32,24 @@
         </button>
         <div id="navbar-right" class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="navbar-elm nav-link" href="#welcome">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-elm nav-link" href="#aboutme">Mon parcours</a>
-            </li>
-            <li class="nav-item">
-              <a class="navbar-elm nav-link" href="#projects">Mes projets</a>
-                
-            </li>
-            <li class="nav-item">
-              <a class="navbar-elm mailto nav-link" href="#contact">Contactez-moi</a>
-            </li>
-        </ul>
-          
+           <li class="nav-item">
+            <a class="navbar-elm nav-link" href="#welcome">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-elm nav-link" href="#aboutme">Mon parcours</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-elm nav-link" href="#projects">Mes projets</a>
+              
+          </li>
+          <li class="nav-item">
+            <a class="navbar-elm mailto nav-link" href="#contact">Contactez-moi</a>
+          </li> 
+            
+            
+            
+          </ul>
+            
           
           
           
@@ -115,7 +129,7 @@
           </div>
           <div class="row">
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-left">
               <h3 class="resume-title">Diplômes et formations</h3>
               <div class="resume-item pb-0">
                 <h4>Concepteur Développeur d’Applications Numériques Inclusiv Academy</h4>
@@ -140,7 +154,7 @@
                 <p><em>Supérieure Polytechnique d’Antananarivo, Vontovorona</em></p>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-right">
               <h3 class="resume-title">Expériences professionnelles</h3>
               <div class="resume-item">
                 <h4>Responsable stations d’épurations (STEP)</h4>
@@ -161,6 +175,7 @@
           </div>
         
         </div>
+        <button type="button" onclick="window.location.href='pdf/CV Mahefa Rasolofonirina Inclusiv Academy.pdf'" class="btn btn-info" onclick="window.open(this.href, '_blank'); return false;">Téléchargez mon CV</button>
         
 
       </section>
@@ -171,7 +186,7 @@
         
         <div class="card-groupe row">
           <div class="card col-2">
-            <a href="https://github.com/mahefasolofo/Projet1_annuaire"><img src="img/image2.jpg" class="card-img-top" alt="image brain"></a>
+            <a href="https://github.com/mahefasolofo/Projet1_annuaire" target="_blank"><img src="img/image2.jpg" class="card-img-top" alt="image brain"></a>
             <div class="card-body">
               <h5 class="card-title">Brain</h5>
               <p class="card-text">Application annuaire développé en JAVA</p>
