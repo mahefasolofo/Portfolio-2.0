@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+
 
 *{
     padding:0;
     margin:0;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Red Hat Text', sans-serif;
     list-style: none;
     
   }
@@ -29,32 +31,51 @@
     background-color: #23354A;
     padding-top: 10px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     box-shadow: 2px 5px 12px rgb(56, 56, 56);
     z-index: 10;
-    opacity: 0.92;
+    
     font-size: 1.4rem;
 
 }
+
+.nav-menu {
+    padding: 0;
+    display: block;
+  }
 #navbar-right{
-    padding: 0px 20px 0 47vw;
-   
+    padding: 0px 20px 0 58vw;
+    
+}
+
+#navbar-right .active{
+    /* padding: 10px 8px 0px 30px; */
+    color: #D0F5FE;
+    height : 45px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-bottom: 4px solid #FF6400;
+    
 }
 
 .navbar-elm{
-    padding: 10px 60px 0px 30px;
+    /* padding: 10px 60px 0px 30px; */
     color: #D0F5FE;
     text-decoration: none;
     font-size: 1.2rem;
+    height : 50px;
 
 }
 
 .navbar-elm:hover{
     color: #FF6400;
-    
     font-size: 1.41rem;
 }
-
+#navbar-right .actif:hover{
+  color: #FF6400;
+  font-size: 1.41rem;
+}
 .bi-accueil{
     padding: 0px 0 0 60px;
     font-size: 30px;
@@ -187,23 +208,29 @@
   }
 
   /*About me section*/
-.section-title{
+
+  #aboutme{
+    background-color: #a2adbf;
+  }
+  
+  #aboutme .row{
+    background-color: rgba(255, 255, 255, 0.65);
+    margin: 0px -80px 20px -80px;
+    padding: 20px 80px 20px 80px;
+    
+  }
+  .section-title{
     font-size: 26px;
     font-weight: 700;
-    color: #45505b;
+    color: #5080b1;
     align-items: center;
     margin: 0 0 0 35vw;
     padding: 80px 0 20px 0;
     width: auto;
+    border-bottom: 3px solid #FF6400;
 }
 
-/* .resume .resume-title {
-    font-size: 26px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #45505b;
-  } */
+
   .resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
@@ -215,12 +242,11 @@
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     color: #41668B;
     margin-bottom: 10px;
   }
   .resume .resume-item h4:hover {
-    
     color: #FF6400;
     
   }
@@ -262,10 +288,23 @@
     width: auto;
     
   }
-
+  
 #parcours{
     
     color: #23354A;
+}
+/*Telecharger mon CV*/
+.btn-info{
+    align-items: center;
+    margin-left : 42vw;
+    background-color: #FF6400;
+    border: none;
+    box-shadow: 2px 5px 12px rgb(56, 56, 56);
+}
+.btn-info:hover{
+  background-color: #23354A;
+  color: #D0F5FE;
+  border: none;
 }
 
 /*Mes projets*/
@@ -274,28 +313,38 @@
     width: 100vw;
     background-color: #ffffff;
     padding: 0 80px 80px 80px;
+    background-image: url(../img/background4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
 }
+
 
 
 .card{
     padding: 12px 12px 12px 12px;
     width: 18rem;
+    min-width: 18rem;
     border: none;
-    /* box-shadow: 2px 5px 12px rgb(56, 56, 56); */
-    background-color: #dde4f0;
-    border-radius: 0%;
+    box-shadow: 2px 5px 12px rgb(56, 56, 56);
+    background-color: #fff;
+    border-radius: 3px;
+
 }
 
 .card:hover{
     margin: -5px 0 5px 0;
+    
     box-shadow: 2px 10px 12px rgb(56, 56, 56);
 }
 
 .card-groupe{
-    background-color: none;
+    background-color: rgba(255, 255, 255, 0.5);
     display: flex;
-    padding: 0 180px 0 180px;
+    padding: 100px 200px 100px 200px;
     justify-content: space-between;
+    
     
 }
 
@@ -321,22 +370,6 @@
     background-color: #fff;
 }
 
-.btn-retour{
-    margin: -30px 0 0 91vw;
-    background-color: #FF6400;
-    color: #fff;
-    font-size: 1.5rem;
-    border: none;
-    box-shadow: 2px 5px 12px rgb(56, 56, 56);
-}
-
-.btn-retour:hover{
-    margin: -31.5px 0 0 90.5vw;
-    background-color: #a2adbf;
-    color:#23354A;
-    box-shadow: 2px 5px 12px rgb(56, 56, 56);
-    
-}
 
 .contact .info {
     width: 100%;
@@ -440,15 +473,15 @@
     padding: 10px 12px;
   }
   .contact .php-email-form button[type=submit] {
-    background: #0563bb;
+    background: #23354A;
     border: 0;
     padding: 10px 35px;
-    color: #fff;
+    color: #D0F5FE;
     transition: 0.4s;
     border-radius: 50px;
   }
   .contact .php-email-form button[type=submit]:hover {
-    background: #0678e3;
+    background: #FF6400;
   }
   @-webkit-keyframes animate-loading {
     0% {
@@ -466,11 +499,31 @@
       transform: rotate(360deg);
     }
   }
-  
+  .btn-retour{
+    margin: -30px 0 0 94vw;
+    background-color: #FF6400;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 2px 5px 12px rgb(85, 85, 85);
+}
+
+.btn-retour:hover{
+    margin: -30px 0 2px 93.5vw;
+    background-color: #a2adbf;
+    color:#23354A;
+    box-shadow: 2px 5px 12px rgb(85, 85, 85);
+    
+}
+
 
 #foot{
-    background-image: url(../img/background1.jpg);
+    background-image: url(../img/background2.jpg);
+    
+    background-size: cover;
     height: 30vh;
     color:#e2e3e4;
-    padding: 50px 0 0 50px;
+    text-align: center;
+    padding-top: 80px;
+    
 }
