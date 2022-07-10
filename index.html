@@ -11,69 +11,55 @@
     <title>Document</title>
 </head>
 <body>
-  <!-- navbar
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-  ======= Header ======= -->
-  <!-- <header id="header" class="d-flex flex-column justify-content-center">
-
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        
-        
-      </ul>
-    </nav> -->
-
+ 
   </header>
-    <nav id="navbar" class="navbar navbar-expand-md container-fluid header">
-        <a href="#welcome"><img src="img/logo.png" alt="logo" id="logo"class="navbar-brand navbar-elm"></a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-right">
+  <div class="navbar-menu">
 
-          <i class="navbar-toggler-icon"> </i>
+ 
+    <nav id="navbar" class="navbar navbar-inverse navbar-expand-md container-fluid navbar-toggleable-md">
+        <a href="#welcome"><img src="img/logo.png" alt="logo" id="logo"class="navbar-brand navbar-elm"></a>
+        
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-right" aria-controls="navbar-right" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
         </button>
         <div id="navbar-right" class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-           <li class="nav-item">
-            <a class="navbar-elm nav-link active" href="#welcome">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-elm nav-link" href="#aboutme">Mon parcours</a>
-          </li>
-          <li class="nav-item">
-            <a class="navbar-elm nav-link" href="#projects">Mes projets</a>
-              
-          </li>
-          <li class="nav-item">
-            <a class="navbar-elm mailto nav-link" href="#contact">Contactez-moi</a>
-          </li> 
-            
-            
-            
-          </ul>
-            
-          
-          
-          
-          
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="navbar-elm nav-link active" href="#welcome">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-elm nav-link" href="#aboutme">Mon parcours</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-elm nav-link" href="#projects">Mes projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-elm mailto nav-link" href="#contact">Contactez-moi</a>
+            </li> 
+          </ul>   
         </div>
     </nav>
-
+  </div>
   <!-- corps -->
     <div class="container-fluid corps">
       <!--Flottante-->
-      <a href="https://www.linkedin.com/in/mahefa-rasolofonirina/" class="btn-flottante btn-linkedin"><i class="bi bi-flottante bi-linkedin"></i></a>
-      <a href="https://github.com/mahefasolofo" class="btn-flottante btn-github"><i class="bi bi-flottante bi-github"></i></a>
-      <a href="mailto:mahefa.rasolofonirina@gmail.com" class="btn-flottante btn-mail" ><i class="bi bi-flottante bi-envelope-fill"></i></a>
+      <div class="row">
+        <a href="https://www.linkedin.com/in/mahefa-rasolofonirina/" class="btn-flottante btn-linkedin"><i class="bi bi-flottante bi-linkedin"></i></a>
+        <a href="https://github.com/mahefasolofo" class="btn-flottante btn-github"><i class="bi bi-flottante bi-github"></i></a>
+        <a href="mailto:mahefa.rasolofonirina@gmail.com" class="btn-flottante btn-mail" ><i class="bi bi-flottante bi-envelope-fill"></i></a>
+      
+      </div>
       
       
       <!-- Welcome section   -->
-      <section id="welcome" class="container-fluid ">
-        <h1>Bonjour,<br/> Je m'appelle Mahefa</h1>
-        
-        
+      <section id="welcome" class="container-fluid">
+        <div class="row">
+          <h1 class="col-xs-10 col-sm-8 col-md-6 col-lg-4" >Bonjour,<br/> Je m'appelle Mahefa</h1>
+               
         <!--Carousel-->
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide  " data-bs-ride="carousel">
           
-          <div class="carousel-inner">
+          <div class="carousel-inner col-xs-10 col-sm-10 col-md-10 col-lg-12 col-lx-12">
             <div class="carousel-item active" data-bs-interval="5000">
               <div class="new_html_code"></div>
               <div class="carousel-caption">
@@ -110,15 +96,17 @@
             </div>
              
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <button class="carousel-control-prev carousel-control" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <button class="carousel-control-next carousel-control" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+          </div>
         </div>
+        
       </section>
       
       <!--A propos de moi section-->
@@ -129,7 +117,7 @@
           </div>
           <div class="row">
 
-            <div class="col-lg-6 col-left">
+            <div class="col-sm-10 col-sm-10 col-md-8 col-lg-6 col-xl-6 col-left">
               <h3 class="resume-title">Diplômes et formations</h3>
               <div class="resume-item pb-0">
                 <h4>Concepteur Développeur d’Applications Numériques Inclusiv Academy</h4>
@@ -175,7 +163,7 @@
           </div>
         
         </div>
-        <button type="button" onclick="window.location.href='pdf/CV Mahefa Rasolofonirina Inclusiv Academy.pdf'" class="btn btn-info" onclick="window.open(this.href, '_blank'); return false;">Téléchargez mon CV</button>
+        <button type="button" onclick="window.location.href='pdf/CV Mahefa Rasolofonirina Inclusiv Academy.pdf'" class="btn telechargerCv btn-info" onclick="window.open(this.href, '_blank'); return false;">Téléchargez mon CV</button>
         
 
       </section>
@@ -211,6 +199,8 @@
           </div>
         </div>
       </section>
+
+      <!--Section contactez-moi-->
       <section id="contact" class="contact">
         <div class="container">
           <div class="section-title"><h1>Contactez-moi</h1></div>
@@ -244,7 +234,7 @@
   
             <div class="col-lg-8 mt-5 mt-lg-0">
   
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <form action="" method="post" role="form" class="email-form">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
